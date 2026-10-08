@@ -1,0 +1,99 @@
+{
+  "stage": "expanded_2024_2026",
+  "years": [
+    2024,
+    2026
+  ],
+  "generated_at_utc": "2026-10-08T05:26:43.604746+00:00",
+  "duckdb": "1.5.5",
+  "python": "3.13.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "files": [
+    "data/raw/green/2024/green_tripdata_2024-01.parquet",
+    "data/raw/green/2024/green_tripdata_2024-02.parquet",
+    "data/raw/green/2024/green_tripdata_2024-03.parquet",
+    "data/raw/green/2024/green_tripdata_2024-04.parquet",
+    "data/raw/green/2024/green_tripdata_2024-05.parquet",
+    "data/raw/green/2024/green_tripdata_2024-06.parquet",
+    "data/raw/green/2024/green_tripdata_2024-07.parquet",
+    "data/raw/green/2024/green_tripdata_2024-08.parquet",
+    "data/raw/green/2024/green_tripdata_2024-09.parquet",
+    "data/raw/green/2024/green_tripdata_2024-10.parquet",
+    "data/raw/green/2024/green_tripdata_2024-11.parquet",
+    "data/raw/green/2024/green_tripdata_2024-12.parquet",
+    "data/raw/green/2026/green_tripdata_2026-01.parquet",
+    "data/raw/green/2026/green_tripdata_2026-02.parquet",
+    "data/raw/green/2026/green_tripdata_2026-03.parquet",
+    "data/raw/green/2026/green_tripdata_2026-04.parquet",
+    "data/raw/green/2026/green_tripdata_2026-05.parquet",
+    "data/raw/green/2026/green_tripdata_2026-06.parquet",
+    "data/raw/green/2026/green_tripdata_2026-07.parquet",
+    "data/raw/green/2026/green_tripdata_2026-08.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-01.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-02.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-03.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-04.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-05.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-06.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-07.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-08.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-09.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-10.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-11.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-12.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-01.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-02.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-03.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-04.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-05.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-06.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-07.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-08.parquet"
+  ],
+  "queries": {
+    "01_inventory.sql": {
+      "seconds": 1.2611762500018813,
+      "result_rows": 4
+    },
+    "02_sample.sql": {
+      "seconds": 0.1766900839866139,
+      "result_rows": 20
+    },
+    "03_quality.sql": {
+      "seconds": 3.9872438330057776,
+      "result_rows": 4
+    },
+    "04_monthly.sql": {
+      "seconds": 8.059813667001436,
+      "result_rows": 40
+    },
+    "05_hourly.sql": {
+      "seconds": 3.292600708999089,
+      "result_rows": 96
+    },
+    "06_payments.sql": {
+      "seconds": 2.1811671659961576,
+      "result_rows": 21
+    },
+    "07_distributions.sql": {
+      "seconds": 41.69031345899566,
+      "result_rows": 4
+    },
+    "08_common_months.sql": {
+      "seconds": 3.45893100000103,
+      "result_rows": 4
+    },
+    "09_weekday.sql": {
+      "seconds": 2.2124100000073668,
+      "result_rows": 28
+    },
+    "10_distance_bins.sql": {
+      "seconds": 2.203552374994615,
+      "result_rows": 20
+    },
+    "11_outliers.sql": {
+      "seconds": 1.6732661250134697,
+      "result_rows": 20
+    }
+  }
+}

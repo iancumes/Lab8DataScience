@@ -1,0 +1,3 @@
+taxi,source_year,rows,bad_date,bad_distance,bad_duration,bad_amount,missing_passengers,unusual_passengers,excluded,excluded_pct
+green,2026,337114,98,12284,1521,6196,48775,4626,19300,5.725
+yellow,2026,29703355,146,953454,381810,180386,7716688,91387,1484005,4.996

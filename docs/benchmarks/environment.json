@@ -1,0 +1,12 @@
+{
+  "generated_at_utc": "2026-10-08T05:35:44.655956+00:00",
+  "duckdb": "1.5.5",
+  "python": "3.13.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "threads": 4,
+  "memory_limit": "3GB",
+  "repeats": 3,
+  "cache": "warm; no se vacía caché del sistema operativo",
+  "methodology": "Una conexión por escala; calentamiento de ambas rutas; orden alternado; fetchall incluido; CTAS medido aparte.",
+  "results_verified": true
+}

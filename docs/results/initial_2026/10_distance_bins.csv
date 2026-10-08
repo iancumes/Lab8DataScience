@@ -1,0 +1,11 @@
+taxi,year,distance_bin,trips
+green,2026,1: <1 mi,44260
+green,2026,2: 1-3 mi,168488
+green,2026,3: 3-10 mi,87729
+green,2026,4: 10-25 mi,16776
+green,2026,5: 25-100 mi,561
+yellow,2026,1: <1 mi,5915837
+yellow,2026,2: 1-3 mi,12976372
+yellow,2026,3: 3-10 mi,7163685
+yellow,2026,4: 10-25 mi,2083254
+yellow,2026,5: 25-100 mi,80202

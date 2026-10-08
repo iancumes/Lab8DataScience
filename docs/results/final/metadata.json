@@ -1,0 +1,124 @@
+{
+  "stage": "final",
+  "years": [
+    2024,
+    2025,
+    2026
+  ],
+  "generated_at_utc": "2026-10-08T05:30:45.705967+00:00",
+  "duckdb": "1.5.5",
+  "python": "3.13.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "files": [
+    "data/raw/green/2024/green_tripdata_2024-01.parquet",
+    "data/raw/green/2024/green_tripdata_2024-02.parquet",
+    "data/raw/green/2024/green_tripdata_2024-03.parquet",
+    "data/raw/green/2024/green_tripdata_2024-04.parquet",
+    "data/raw/green/2024/green_tripdata_2024-05.parquet",
+    "data/raw/green/2024/green_tripdata_2024-06.parquet",
+    "data/raw/green/2024/green_tripdata_2024-07.parquet",
+    "data/raw/green/2024/green_tripdata_2024-08.parquet",
+    "data/raw/green/2024/green_tripdata_2024-09.parquet",
+    "data/raw/green/2024/green_tripdata_2024-10.parquet",
+    "data/raw/green/2024/green_tripdata_2024-11.parquet",
+    "data/raw/green/2024/green_tripdata_2024-12.parquet",
+    "data/raw/green/2025/green_tripdata_2025-01.parquet",
+    "data/raw/green/2025/green_tripdata_2025-02.parquet",
+    "data/raw/green/2025/green_tripdata_2025-03.parquet",
+    "data/raw/green/2025/green_tripdata_2025-04.parquet",
+    "data/raw/green/2025/green_tripdata_2025-05.parquet",
+    "data/raw/green/2025/green_tripdata_2025-06.parquet",
+    "data/raw/green/2025/green_tripdata_2025-07.parquet",
+    "data/raw/green/2025/green_tripdata_2025-08.parquet",
+    "data/raw/green/2025/green_tripdata_2025-09.parquet",
+    "data/raw/green/2025/green_tripdata_2025-10.parquet",
+    "data/raw/green/2025/green_tripdata_2025-11.parquet",
+    "data/raw/green/2025/green_tripdata_2025-12.parquet",
+    "data/raw/green/2026/green_tripdata_2026-01.parquet",
+    "data/raw/green/2026/green_tripdata_2026-02.parquet",
+    "data/raw/green/2026/green_tripdata_2026-03.parquet",
+    "data/raw/green/2026/green_tripdata_2026-04.parquet",
+    "data/raw/green/2026/green_tripdata_2026-05.parquet",
+    "data/raw/green/2026/green_tripdata_2026-06.parquet",
+    "data/raw/green/2026/green_tripdata_2026-07.parquet",
+    "data/raw/green/2026/green_tripdata_2026-08.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-01.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-02.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-03.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-04.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-05.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-06.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-07.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-08.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-09.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-10.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-11.parquet",
+    "data/raw/yellow/2024/yellow_tripdata_2024-12.parquet",
+    "data/raw/yellow/2025/yellow_tripdata_2025-01.parquet",
+    "data/raw/yellow/2025/yellow_tripdata_2025-02.parquet",
+    "data/raw/yellow/2025/yellow_tripdata_2025-03.parquet",
+    "data/raw/yellow/2025/yellow_tripdata_2025-04.parquet",
+    "data/raw/yellow/2025/yellow_tripdata_2025-05.parquet",
+    "data/raw/yellow/2025/yellow_tripdata_2025-06.parquet",
+    "data/raw/yellow/2025/yellow_tripdata_2025-07.parquet",
+    "data/raw/yellow/2025/yellow_tripdata_2025-08.parquet",
+    "data/raw/yellow/2025/yellow_tripdata_2025-09.parquet",
+    "data/raw/yellow/2025/yellow_tripdata_2025-10.parquet",
+    "data/raw/yellow/2025/yellow_tripdata_2025-11.parquet",
+    "data/raw/yellow/2025/yellow_tripdata_2025-12.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-01.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-02.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-03.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-04.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-05.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-06.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-07.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-08.parquet"
+  ],
+  "queries": {
+    "01_inventory.sql": {
+      "seconds": 0.8256667499954347,
+      "result_rows": 6
+    },
+    "02_sample.sql": {
+      "seconds": 0.06706808300805278,
+      "result_rows": 20
+    },
+    "03_quality.sql": {
+      "seconds": 3.1870749999943655,
+      "result_rows": 6
+    },
+    "04_monthly.sql": {
+      "seconds": 7.337550416996237,
+      "result_rows": 64
+    },
+    "05_hourly.sql": {
+      "seconds": 3.095809791004285,
+      "result_rows": 144
+    },
+    "06_payments.sql": {
+      "seconds": 2.8088137909944635,
+      "result_rows": 33
+    },
+    "07_distributions.sql": {
+      "seconds": 57.33999291600776,
+      "result_rows": 6
+    },
+    "08_common_months.sql": {
+      "seconds": 4.221059167000931,
+      "result_rows": 6
+    },
+    "09_weekday.sql": {
+      "seconds": 3.65069929198944,
+      "result_rows": 42
+    },
+    "10_distance_bins.sql": {
+      "seconds": 3.6040855000028387,
+      "result_rows": 30
+    },
+    "11_outliers.sql": {
+      "seconds": 3.349736333999317,
+      "result_rows": 20
+    }
+  }
+}

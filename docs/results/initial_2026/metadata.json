@@ -1,0 +1,74 @@
+{
+  "stage": "initial_2026",
+  "years": [
+    2026
+  ],
+  "generated_at_utc": "2026-10-08T05:25:24.556406+00:00",
+  "duckdb": "1.5.5",
+  "python": "3.13.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "files": [
+    "data/raw/green/2026/green_tripdata_2026-01.parquet",
+    "data/raw/green/2026/green_tripdata_2026-02.parquet",
+    "data/raw/green/2026/green_tripdata_2026-03.parquet",
+    "data/raw/green/2026/green_tripdata_2026-04.parquet",
+    "data/raw/green/2026/green_tripdata_2026-05.parquet",
+    "data/raw/green/2026/green_tripdata_2026-06.parquet",
+    "data/raw/green/2026/green_tripdata_2026-07.parquet",
+    "data/raw/green/2026/green_tripdata_2026-08.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-01.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-02.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-03.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-04.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-05.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-06.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-07.parquet",
+    "data/raw/yellow/2026/yellow_tripdata_2026-08.parquet"
+  ],
+  "queries": {
+    "01_inventory.sql": {
+      "seconds": 0.40947445899655577,
+      "result_rows": 2
+    },
+    "02_sample.sql": {
+      "seconds": 0.055413875001249835,
+      "result_rows": 20
+    },
+    "03_quality.sql": {
+      "seconds": 1.6718532079976285,
+      "result_rows": 2
+    },
+    "04_monthly.sql": {
+      "seconds": 3.8395533339935355,
+      "result_rows": 16
+    },
+    "05_hourly.sql": {
+      "seconds": 1.0069853750028415,
+      "result_rows": 48
+    },
+    "06_payments.sql": {
+      "seconds": 0.9872103750094539,
+      "result_rows": 10
+    },
+    "07_distributions.sql": {
+      "seconds": 11.696576542002731,
+      "result_rows": 2
+    },
+    "08_common_months.sql": {
+      "seconds": 1.3218282079906203,
+      "result_rows": 2
+    },
+    "09_weekday.sql": {
+      "seconds": 0.844998750006198,
+      "result_rows": 14
+    },
+    "10_distance_bins.sql": {
+      "seconds": 0.8842810829955852,
+      "result_rows": 10
+    },
+    "11_outliers.sql": {
+      "seconds": 0.538575666010729,
+      "result_rows": 20
+    }
+  }
+}

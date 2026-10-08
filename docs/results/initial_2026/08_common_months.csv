@@ -1,0 +1,3 @@
+taxi,year,trips,months,total_usd,avg_total_usd,avg_miles,avg_minutes,credit_pct,avg_cbd_fee_usd
+green,2026,317814,8,8055536.36,25.347,3.293,16.852,66.576,0.063
+yellow,2026,28219350,8,853420130.21,30.242,3.515,17.661,65.397,0.543
