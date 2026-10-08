@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "stages": {
+    "initial_2026": {
+      "files": 16,
+      "rows": 30040469,
+      "downloaded": 16,
+      "existing": 0
+    },
+    "expanded_2024_2026": {
+      "files": 40,
+      "rows": 71870407,
+      "downloaded": 24,
+      "existing": 16
+    },
+    "final": {
+      "files": 64,
+      "rows": 121184384,
+      "downloaded": 24,
+      "existing": 40
+    },
+    "rerun": {
+      "files": 64,
+      "rows": 121184384,
+      "downloaded": 0,
+      "existing": 64
+    }
+  },
+  "raw_hashes_verified": 64,
+  "benchmark_runs": 96,
+  "dashboard_cards": 10,
+  "notebook_executed": true,
+  "no_raw_data_in_git": true
+}

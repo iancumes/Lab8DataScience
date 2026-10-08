@@ -1,0 +1,2 @@
+# Dependencia opcional para regenerar el informe Word.
+python-docx==1.2.0

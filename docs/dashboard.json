@@ -1,0 +1,88 @@
+{
+  "database_id": 2,
+  "dashboard_id": 2,
+  "url": "http://localhost:3000/dashboard/2",
+  "cards": [
+    {
+      "slug": "01_volume",
+      "id": 40,
+      "name": "Viajes válidos mensuales",
+      "sql": "SELECT period, taxi, trips AS value FROM monthly ORDER BY period, taxi;",
+      "description": "Volumen mensual por tipo. La escala log permite observar green; 2026 es parcial.",
+      "verified_rows": 64
+    },
+    {
+      "slug": "02_revenue",
+      "id": 41,
+      "name": "Importe total registrado",
+      "sql": "SELECT period, taxi, total_usd AS value FROM monthly ORDER BY period, taxi;",
+      "description": "Suma de total_amount en viajes válidos. Incluye cargos; no representa utilidad.",
+      "verified_rows": 64
+    },
+    {
+      "slug": "03_ticket",
+      "id": 42,
+      "name": "Ticket medio mensual",
+      "sql": "SELECT period, taxi, avg_total_usd AS value FROM monthly ORDER BY period, taxi;",
+      "description": "Importe medio por viaje válido. Cambios de composición y valores extremos afectan la media.",
+      "verified_rows": 64
+    },
+    {
+      "slug": "04_distance",
+      "id": 43,
+      "name": "Distancia típica mensual",
+      "sql": "SELECT period, taxi, median_miles AS value FROM monthly ORDER BY period, taxi;",
+      "description": "Mediana de distancia en viajes válidos. Comparar con las colas p95/p99 del informe.",
+      "verified_rows": 64
+    },
+    {
+      "slug": "05_duration",
+      "id": 44,
+      "name": "Duración típica mensual",
+      "sql": "SELECT period, taxi, median_minutes AS value FROM monthly ORDER BY period, taxi;",
+      "description": "Mediana de duración en viajes válidos, limitada a 180 minutos por regla operativa.",
+      "verified_rows": 64
+    },
+    {
+      "slug": "06_credit",
+      "id": 45,
+      "name": "Participación de tarjeta",
+      "sql": "SELECT period, taxi, credit_pct AS value FROM monthly ORDER BY period, taxi;",
+      "description": "Porcentaje de viajes válidos con payment_type=1. Otros códigos no equivalen automáticamente a efectivo.",
+      "verified_rows": 64
+    },
+    {
+      "slug": "07_tips",
+      "id": 46,
+      "name": "Propinas registradas en tarjeta",
+      "sql": "SELECT period, taxi, card_tip_pct AS value FROM monthly ORDER BY period, taxi;",
+      "description": "100 × suma(propina)/suma(tarifa), solo tarjeta y propina no negativa. No mide propinas en efectivo.",
+      "verified_rows": 64
+    },
+    {
+      "slug": "08_hourly",
+      "id": 47,
+      "name": "Perfil horario por año y tipo",
+      "sql": "SELECT hour, taxi || ' ' || year::VARCHAR AS series, round(100.0*trips/sum(trips) OVER (PARTITION BY taxi,year),3) AS value FROM hourly ORDER BY hour, series;",
+      "description": "Participación horaria dentro de cada año/taxi. Normalizar evita confundir meses de exposición con comportamiento horario.",
+      "verified_rows": 144
+    },
+    {
+      "slug": "09_quality",
+      "id": 48,
+      "name": "Exclusión por calidad",
+      "sql": "SELECT source_year::VARCHAR AS year, taxi, excluded_pct AS value FROM quality ORDER BY year, taxi;",
+      "description": "Porcentaje de filas que incumplen al menos una regla operativa. Los motivos se solapan; no se suman. No todo viaje excluido es falso.",
+      "verified_rows": 6
+    },
+    {
+      "slug": "10_evolution",
+      "id": 49,
+      "name": "Demanda en meses comparables",
+      "sql": "SELECT year::VARCHAR AS year, taxi, trips AS value FROM common_months ORDER BY year, taxi;",
+      "description": "Conteo de viajes válidos solo en meses presentes en ambos taxis y todos los años. No extrapola el resto de 2026.",
+      "verified_rows": 6
+    }
+  ],
+  "read_only": true
+}
